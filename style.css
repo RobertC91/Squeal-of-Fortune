@@ -2,53 +2,50 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(86, 68, 243);
+:root {
+    --background: rgb(86, 68, 243);
+    --cardBg: aliceblue;
+}
+
+ body {
+    background-color: var(--background);
     background-image: linear-gradient(315deg, rgb(86, 68, 243) 0%, #f5f7fa 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     overflow: hidden;
     margin: 0;
 }
 
-.quiz-container{
-    background-color: aliceblue;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 2px grey;
-    width: 500px;
-    max-width: 95vw;
-    overflow: hidden;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vh
 }
 
-.quiz-header {
-    padding: 1rem;
-}
-
-h2 {
-    padding: 1rem;
-    text-align: center;
-    margin: 0;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li{
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
-
-ul li label {
+#leaderboard-link {
     cursor: pointer;
+    font-weight: bolder;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
-button {
-    background-color:crimson;
+time {
+    min-width: 85px;
+    font-weight: bolder;
+    font-size: 23px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color:rgb(20, 220, 103);
     color: black;
     border: none;
     display: block;
@@ -61,12 +58,60 @@ button {
 }
 
 button:hover {
-    background-color: rgb(86, 68, 243);
+    background-color: var(--background);
     color:white
 }
 
-button:focus {
-    outline: none;
-    background-color:chartreuse;
-    color: black;
+.inline {
+    display: inline-flex;
+}
+
+.quiz-container{
+    background-color: var(--cardBg);
+    margin-top: 35vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px grey;
+    width: 500px;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.option-button {
+    width: 100%;
+    text-align: left;
+    margin: 5px;
+}
+
+#final {
+    display: none;
+}
+
+.inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#initials {
+    width: 25%;
+    margin: 8px;
+    padding: 1vh;
+}
+
+#back {
+    margin-right: 8px;
+}
+
+.highscore-list {
+    padding-inline-start: 20px;
+}
+
+
+
+
+
+@media screen and (min-width: 850px) {
+    .card {
+      max-width: 680px;
+    }
 }
