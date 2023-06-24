@@ -177,11 +177,14 @@ function checkAnswer(eventObject) {
     let optionButton = eventObject.target;
     final.style.display = "block";
     if (optionIsCorrect(optionButton)) {
-        finalText.textContent = 'Correct!';
-        setTimeout(hideFinalText, 1000);
+        finalText.textContent= 'Correct!';
+        finalText.setAttribute('style', 'color: lime; font-size: 40px;')
+        setTimeout(hideFinalText, 1500);
     } else {
-        finalText.textContent = 'Incorrect!';
-        setTimeout(hideFinalText, 1000);
+        finalText.textContent = 'Wrong!';
+        finalText.setAttribute('style','color: red; font-size: 40px;')
+        setTimeout(hideFinalText, 1500);
+        ;
         if (time >=  10) {
             time = time - 10;
             displayTime();
@@ -190,9 +193,10 @@ function checkAnswer(eventObject) {
             displayTime();
             endQuiz();
         }
+        return;
     }
 
-    currentQuestion++;
+     currentQuestion++;
     if(currentQuestion < quizData.length) {
         displayQuestion();
     } else {
@@ -275,15 +279,15 @@ function renderLeaderboard() {
     });
     return leaderboardArray;
   }
+// commented out clear button functionality so users can't clear data.
+
+//     const clearButton = document.querySelector("#clear-button");
+//     clearButton.addEventListener("click", clearHighscores);
   
-  let clearButton = document.querySelector("#clear");
-  clearButton.addEventListener("click", clearHighscores);
-  
-  
-  function clearHighscores() {
-    localStorage.clear();
-    renderLeaderboard();
-  }
+//     function clearHighscores() {
+//     localStorage.clear();
+//     renderLeaderboard();
+//   }
   
   let backButton = document.querySelector("#back");
   backButton.addEventListener("click", returnToStart);

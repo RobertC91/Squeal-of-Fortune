@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Squeal of Fortune</title>
 </head>
 
@@ -15,10 +16,10 @@
     </header>
     
     <main> 
-        <section id="begin" class="quiz-container">
+        <section id="begin" class="start-box">
             <h2 id="title">Squeal of Fortune</h2>
             <p>A race against time, get an answer wrong and lose time. Do you have what it takes?</p>
-            <button id='start-button' class="button">Start</button>
+            <button id='start-button' class="start-button">Start</button>
         </section>
         
         <div hidden id='question' class="quiz-container">
@@ -32,7 +33,7 @@
                 <button id=option3 class="button option-button"></button>
             </div>
         
-            <section id='final'>
+            <section id='final' class="result">
                 <hr>
                 <p id="final-text"></p>
             </section>
@@ -49,12 +50,13 @@
             </form>
         </section>
 
-        <section hidden id="leaderboard" class="quiz-container">
+        <section hidden id="leaderboard" class="leaderboard-box">
             <h2>Highscores!</h2>
             <ol id="highscore-list"></ol>
             <div class="inline">
-                <button id="back" class="button">Back</button>
-                <button id="clear" class="button">Clear Highscores</button>
+                <button id="back" class="home-button">Home</button>
+                <!-- clear highscore button commented out so users can't clear -->
+                <!-- <button id="clear-button" class="home-button">Clear Highscores</button> -->
             </div>
         </section>
 
