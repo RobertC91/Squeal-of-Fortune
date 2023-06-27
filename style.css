@@ -1,57 +1,54 @@
-*{
+* {
     box-sizing: border-box;
 }
-
-/* Main Styles */
-
 
 :root {
     --background: rgb(86, 68, 243);
     --cardBg: aliceblue;
 }
 
- body {
+body {
     background-color: var(--background);
     background-image: linear-gradient(315deg, rgb(46, 39, 107) 0%, #f5f7fa 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+    padding: 1.5vh;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1.5vh
 }
 
-#leaderboard-link {
-    cursor: pointer;
-    font-weight: bolder;
-    font-size: 23px;
-    margin-top: 10px;
-    margin-left: 50px;
-}
+
 
 time {
     min-width: 85px;
     font-weight: bolder;
-    font-size: 23px;
+    font-size: 20px;
     margin-right: 50px;
     margin-top: 10px;
 }
 
 main {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li {
+    margin: 10px
 }
 
 
 /* button styles */
 .button {
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border: none;
     display: block;
@@ -65,45 +62,40 @@ main {
 
 button:hover {
     background-color: var(--background);
-    color:rgb(255, 255, 255)
+    color: rgb(255, 255, 255)
 }
 
-.start-button{
-    background-color:rgb(0, 0, 0);
+.start-button {
+    background-color: rgb(0, 0, 0);
     color: white;
     border: none;
     display: block;
     width: 100%;
     cursor: pointer;
     font-size: 1.1rem;
-    font-family: inherit;
     font-weight: bold;
     padding: 1.1rem;
     font-size: 35px;
-    
+
 }
 
 .home-button {
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 10%;
     display: block;
     width: 100%;
     cursor: pointer;
     font-size: 18px;
-    font-family: inherit;
     font-weight: bold;
-    padding: .8rem; 
+    padding: .8rem;
 }
 
 .option-button {
-    width: 100%;
+    width: 97.5%;
     text-align: left;
     margin: 5px;
-}
-
-.inline {
-    display: inline-flex;
+    border-radius: 15px;
 }
 
 /* box styles */
@@ -112,44 +104,39 @@ button:hover {
     display: inline-flex;
 }
 
-.quiz-container{
+.quiz-container {
     background-image: linear-gradient(315deg, rgb(46, 39, 107) 0%, #f5f7fa 100%);
-    margin-top: 25vh;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px grey;
     width: 500px;
     max-width: 80%;
-    overflow: hidden;
 }
 
 .start-box {
-    background-image: linear-gradient(315deg,#f5f7fa 0%, rgb(46, 39, 107) 100%);
+    background-image: linear-gradient(315deg, #f5f7fa 0%, rgb(46, 39, 107) 100%);
     border-radius: 25px;
-    margin-top: 25vh;
+    margin-top: 10vh;
     box-shadow: 0 0 10px 2px grey;
     width: 500px;
     max-width: 80%;
-    overflow: hidden;
     text-align: center;
 }
 
-.start-box h2 {
-    font-size: 65px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.start-box h1 {
+    font-size:50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
-    margin-top: auto;
-    background-image: linear-gradient(315deg,#f5f7fa 0%, rgb(46, 39, 107) 100%);
-    
+    background-image: linear-gradient(315deg, #f5f7fa 0%, rgb(46, 39, 107) 100%);
+
 }
 
 .start-box p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 50px; 
 }
 
 .leaderboard-box h2 {
-    font-size: 70px;
+    font-size: vw;
 }
 
 .result {
@@ -157,15 +144,16 @@ button:hover {
     margin-bottom: 0px;
 }
 
-#final {
-    display: none;
-}
-
 .inline-form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
+
+#final {
+    display: none;
+}
+
 
 #initials {
     width: 25%;
@@ -177,4 +165,10 @@ button:hover {
     padding-inline-start: 20px;
     color: black;
     font-weight: bold;
+}
+
+@media screen and (min-width: 850px) {
+    .quiz-container {
+        margin-top: 0;
+    }
 }

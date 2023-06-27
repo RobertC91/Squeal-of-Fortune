@@ -136,7 +136,7 @@ function startQuiz() {
     question.removeAttribute('hidden');
     currentQuestion = 0;
     displayQuestion();
-    time = quizData.length *10;
+    time = quizData.length *12;
     intervalID = setInterval(countdown, 1000);
     displayTime();
 }
