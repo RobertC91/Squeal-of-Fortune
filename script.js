@@ -183,11 +183,11 @@ function checkAnswer(eventObject) {
     final.style.display = "block";
     if (optionIsCorrect(optionButton)) {
         finalText.textContent = 'Correct!';
-        finalText.setAttribute('style', 'color: lime; font-size: 40px;')
+        finalText.setAttribute('style', 'color: lime; font-size: 5vw; font-weight: bold; text-align: center')
         setTimeout(hideFinalText, 1500);
     } else {
         finalText.textContent = 'Wrong!';
-        finalText.setAttribute('style', 'color: red; font-size: 40px;')
+        finalText.setAttribute('style', 'color: red; font-size: 5vw; font-weight: bold; text-align: center')
         setTimeout(hideFinalText, 1500);
         ;
         if (time >= 10) {
