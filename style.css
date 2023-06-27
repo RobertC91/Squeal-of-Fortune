@@ -27,7 +27,7 @@ header {
 time {
     min-width: 85px;
     font-weight: bolder;
-    font-size: 2.8vw;
+    font-size: 2vw;
     margin-right: 50px;
     padding: 1.3vw
 }
@@ -38,14 +38,14 @@ main {
     justify-content: center;
 }
 
-ul {
+ol {
     list-style: none;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 
 li {
-    margin: 1.3vw
+    margin: .2vw
 }
 
 /* box styles */
@@ -57,8 +57,8 @@ li {
     background-image: linear-gradient(315deg, rgb(46, 39, 107) 0%, #f5f7fa 100%);
     border-radius: 10px;
     box-shadow: 0 0 10px 2px grey;
-    max-width: 80%;
     margin-top: 10vh;
+    max-width: 40%;
 }
 
 .start-box {
@@ -66,19 +66,19 @@ li {
     border-radius: 10px;
     margin-top: 10vh;
     box-shadow: 0 0 10px 2px grey;
-    max-width: 80%;
+    max-width: 40%;
     text-align: center;
 }
 
 .start-box h1 {
-    font-size: 10vw;
+    font-size: 5vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: linear-gradient(315deg, #f5f7fa 0%, rgb(46, 39, 107) 100%);
     border-radius: 10px 10px 0px 0px;
 }
 
 .start-box p {
-    font-size: 4.5vw;
+    font-size: 2vw;
     font-weight: bold;
 }
 
@@ -87,14 +87,14 @@ li {
 }
 
 .leaderboard-box h2 {
-    font-size: 10vw;
+    font-size: 4vw;
     font-weight: bold;
 }
 
 .result {
     font-weight: bold;
     margin-bottom: 0px;
-    font-size: 4vw;
+    font-size: 2.5vw;
     text-align: center;
 }
 
@@ -106,7 +106,7 @@ li {
 
 .questions {
     text-align: center;
-    font-size: 5.3vw;
+    font-size: 2vw;
     font-weight: bold;
     padding: 1vw;
 }
@@ -115,32 +115,32 @@ li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     font-weight: bold;
-    font-size: 2.8vw;
+    font-size: 1.5vw;
     text-decoration: none;
     padding: 1.3vw;
     cursor: pointer;
 }
 
 .finish {
-    font-size: 5.3vw;
+    font-size: 4.3vw;
     text-align: center;
     font-weight: bold;
 }
 
 .grade {
     text-align: center;
-    font-size: 2.8vw;
+    font-size: 2vw;
     font-weight: bold;
 }
 
 label {
-    font-size: 2.5vw;
+    font-size: 1.4vw;
     font-weight: bold;
 }
 
 #initials {
     width: 25%;
-    margin: 8px;
+    margin: 6px;
     padding: 1vh;
 }
 
@@ -172,7 +172,7 @@ label {
     display: block;
     width: 100%;
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 2vw;
     font-family: inherit;
     font-weight: bold;
     padding: .7rem;
@@ -188,7 +188,7 @@ label {
     cursor: pointer;
     font-weight: bold;
     padding: .4rem;
-    font-size: 8vw;
+    font-size: 3vw;
 
 }
 
@@ -199,9 +199,9 @@ label {
     display: block;
     width: 100%;
     cursor: pointer;
-    font-size: 18px;
+    font-size: .8vw;
     font-weight: bold;
-    padding: .8rem;
+    padding: .1rem;
 }
 
 .option-button {
@@ -209,14 +209,8 @@ label {
     text-align: left;
     margin: .7vw;
     border-radius: 10px;
-    font-size: 3.5vw;
+    font-size: 1.2vw;
     padding: .7vw;
-}
-
-@media screen and (min-width: 850px) {
-    .quiz-container {
-        max-width: 680px;
-    }
 }
 
 @media (hover) {
