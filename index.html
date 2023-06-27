@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <a id='leaderboard-link'>View Highscores</a>
+        <a id='leaderboard-link' class="highscore">View Highscores</a>
 
         <time>Time: <span id='time'></span></time>
     </header>
@@ -24,7 +24,7 @@
         
         <div hidden id='question' class="quiz-container">
 
-            <h2 id='question-text'></h2>
+            <h2 id='question-text' class="questions"></h2>
 
             <div id='quiz-options'>
                 <button id=option0 class="button option-button"></button>
@@ -41,12 +41,12 @@
         </div>
         
         <section hidden id='score-card' class='quiz-container'>
-            <h2>Fin!</h2>
-            <p>Your final score is <span id=score></span>.</p>
+            <h2 class = finish>Fin!</h2>
+                <p class= 'grade'>Your final score is <span id=score></span>.</p>
             <form class='inline-form'>
                 <label for="initials">Enter Initials:</label>
                 <input type="text" id="initials">
-                <button id="submit" class="button">Submit</button>
+                <button id="submit" class="submit-button">Submit</button>
             </form>
         </section>
 
