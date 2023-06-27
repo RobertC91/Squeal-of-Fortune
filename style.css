@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin-bottom: 142px;
     overflow: hidden;
 }
 
@@ -9,7 +8,12 @@
     --cardBg: aliceblue;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     background-color: var(--background);
     background-image: linear-gradient(315deg, rgb(46, 39, 107) 0%, #f5f7fa 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
