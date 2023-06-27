@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin-bottom: 142px;
+    overflow: hidden;
 }
 
 :root {
@@ -18,8 +20,6 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 time {
     min-width: 85px;
