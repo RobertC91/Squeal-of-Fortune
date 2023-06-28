@@ -214,7 +214,7 @@ input {
     color: var(--hover);
   }
 
-  button:hover {
+  .button:hover {
     background-color: var(--hover);
   }
 
