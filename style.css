@@ -1,212 +1,210 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --smoke:rgba(255, 255, 255, 0.788);
-    --cardBg: aliceblue;
+  --smoke: rgba(255, 255, 255, 0.788);
+  --cardBg: aliceblue;
 }
 
-
 body {
-    background-color: rgb(35, 34, 37);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 1.5vh;
-    margin: 0px;
+  background-color: rgb(35, 34, 37);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1.5vh;
+  margin: 0px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    color: whitesmoke;
-    padding: 3vw;
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  padding: 3vw;
 }
 
 time {
-    min-width: 85px;
-    font-weight: bolder;
-    padding: 1.3vw
+  min-width: 85px;
+  font-weight: bolder;
+  padding: 1.3vw;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ol {
-    list-style: none;
-    font-weight: bold;
+  list-style: none;
+  font-weight: bold;
 }
 
 li {
-    margin: .2vw
+  margin: 0.2vw;
 }
 
 /* box styles */
 .inline {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .quiz-container {
-    background-image: linear-gradient(315deg, #acacac 0%, rgb(27, 26, 32) 100%);
-    border-radius: 10px;
-    box-shadow: 0 0 10px 2px grey;
-    margin-top: 10vh;
-    max-width: 80%;
-    text-align: center;
+  background-image: linear-gradient(315deg, #acacac 0%, rgb(27, 26, 32) 100%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px grey;
+  margin-top: 10vh;
+  max-width: 80%;
+  text-align: center;
 }
 
 .start-box {
-    background-image: linear-gradient(315deg, #acacac 0%, rgb(27, 26, 32) 100%);
-    border-radius: 10px;
-    margin-top: 10vh;
-    box-shadow: 0 0 10px 2px grey;
-    text-align: center;
-    max-width: 80%;
+  background-image: linear-gradient(315deg, #acacac 0%, rgb(27, 26, 32) 100%);
+  border-radius: 10px;
+  margin-top: 10vh;
+  box-shadow: 0 0 10px 2px grey;
+  text-align: center;
+  max-width: 80%;
 }
 
 .start-box h1 {
-    background-image: linear-gradient(315deg, #acacac 0%, rgb(27, 26, 32) 100%);
-    border-radius: 10px 10px 0px 0px;
-    padding: .5vw;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.788);
+  background-image: linear-gradient(315deg, #acacac 0%, rgb(27, 26, 32) 100%);
+  border-radius: 10px 10px 0px 0px;
+  padding: 0.5vw;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.788);
 }
 
 .start-box p {
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.788);
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.788);
 }
 
-.leaderboard-box{
+.leaderboard-box {
   color: #f5f7fa;
 }
 .leaderboard-box ol {
-    text-align: center;
-    columns: 2;;
+  text-align: center;
+  columns: 2;
 }
 
 .leaderboard-box h2 {
-    font-weight: bold;
-    padding: .5vw;
+  font-weight: bold;
+  padding: 0.5vw;
 }
 
 .inline-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .questions {
-    text-align: center;
-    margin: .7vw;
-    color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  margin: 0.7vw;
+  color: rgba(255, 255, 255, 0.788);
 }
 
 .highscore {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1.3vw;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.788);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1.3vw;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.788);
 }
 
 .finish {
-    text-align: center;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.788);
 }
 
 .grade {
-    text-align: center;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.788);
 }
 
 label {
-    font-weight: bold;
-    margin-left: 15vw;
-    color: rgba(255, 255, 255, 0.788);
+  font-weight: bold;
+  margin-left: 15vw;
+  color: rgba(255, 255, 255, 0.788);
 }
 
 input {
-    width: 25%;
+  width: 25%;
 }
 
 /* button styles */
 .button {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: none;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 1.1rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 1.1rem;
 }
 
 .submit-button {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border-radius: 0px 0px 10px 10px;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    font-weight: bold;
-    padding: .4rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 0px 0px 10px 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.4rem;
 }
 
 .start-button {
-    background-color: rgb(0, 0, 0);
-    border-radius: 0px 0px 10px 10px;
-    color: white;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    font-weight: bold;
-    padding: .4rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.4rem;
 }
 
 .home-button {
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    color: white;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    font-weight: bold;
-    padding: .4rem;
-    margin: 1vw;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  color: white;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.4rem;
+  margin: 1vw;
 }
 
 .option-button {
-    width: 97%;
-    text-align: left;
-    margin: .5vw;
-    padding: .5vw;
-    border-radius: 10px;
+  width: 97%;
+  text-align: left;
+  margin: 0.5vw;
+  padding: 0.5vw;
+  border-radius: 10px;
 }
 
-@media (hover) {
-    a:hover {
-        color: purple
-    }
+@media (hover:hover) {
+  a:hover {
+    color: purple;
+  }
 
-    button:hover {
-        background-color: purple;
-    }
+  button:hover {
+    background-color: purple;
+  }
 }
 
 @media screen and (min-width: 850px) {
-    .start-box {
-      max-width: 680px;
-    }
-
-    .quiz-container {
-        max-width: 680px;
-      }
-
+  .start-box {
+    max-width: 680px;
   }
+
+  .quiz-container {
+    max-width: 680px;
+  }
+}
