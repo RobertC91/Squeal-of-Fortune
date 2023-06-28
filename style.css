@@ -4,7 +4,7 @@
 
 :root {
   --smoke: rgba(255, 255, 255, 0.788);
-  --cardBg: aliceblue;
+  --hover: purple;
 }
 
 body {
@@ -70,12 +70,12 @@ li {
   border-radius: 10px 10px 0px 0px;
   padding: 0.5vw;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.788);
+  color: var(--smoke);
 }
 
 .start-box p {
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.788);
+  color: var(--smoke);
 }
 
 .leaderboard-box {
@@ -100,7 +100,7 @@ li {
 .questions {
   text-align: center;
   margin: 0.7vw;
-  color: rgba(255, 255, 255, 0.788);
+  color: var(--smoke);
 }
 
 .highscore {
@@ -109,25 +109,25 @@ li {
   text-decoration: none;
   padding: 1.3vw;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.788);
+  color: var(--smoke);
 }
 
 .finish {
   text-align: center;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.788);
+  color: var(--smoke);
 }
 
 .grade {
   text-align: center;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.788);
+  color: var(--smoke);
 }
 
 label {
   font-weight: bold;
   margin-left: 15vw;
-  color: rgba(255, 255, 255, 0.788);
+  color: var(--smoke);
 }
 
 input {
@@ -189,13 +189,45 @@ input {
   border-radius: 10px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    color: purple;
+.button:hover {
+  background-color: var(--hover);
+}
+
+.highscore:hover {
+  color: var(--hover);
+}
+
+.start-button:hover {
+  background-color: var(--hover);
+}
+
+.submit-button:hover {
+  background-color: var(--hover);
+}
+
+.home-button:hover {
+  background-color: var(--hover);
+}
+/* removing hover options for mobile to prevent sticky hover */
+@media (hover: none) {
+  .highscore:hover {
+    color: var(--hover);
   }
 
   button:hover {
-    background-color: purple;
+    background-color: var(--hover);
+  }
+
+  .start-button:hover {
+    background-color: var(--hover);
+  }
+
+  .submit-button:hover {
+    background-color: var(--hover);
+  }
+
+  .home-button:hover {
+    background-color: var(--hover);
   }
 }
 
