@@ -10,7 +10,7 @@ https://robertc91.github.io/Squeal-of-Fortune/
 
 As well as an image showcasing the Start Screen of the page:
 
-![Alt text](<Images/Squeal of Fortune.png>)
+![Alt text](Images/Squeal.png)
 
 ## Installation
 
