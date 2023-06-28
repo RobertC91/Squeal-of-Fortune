@@ -189,7 +189,7 @@ input {
   border-radius: 10px;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   a:hover {
     color: purple;
   }
